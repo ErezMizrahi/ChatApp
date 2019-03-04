@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChatPic</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Hello login fragment</string>
+    <string name="singup">Hello singup fragment</string>
+    <string name="facebook_app_id">2010769095648978</string>
+    <string name="fb_login_protocol_scheme">fb2010769095648978</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

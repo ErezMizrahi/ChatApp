@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passLog"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/com_facebook_button_background_color"
+        app:layout_constraintEnd_toEndOf="@+id/emailLog"
+        app:layout_constraintStart_toStartOf="@+id/emailLog"
+        app:layout_constraintTop_toBottomOf="@+id/emailLog"
+        tools:drawableLeft="@drawable/pass"
+        tools:drawableStart="@drawable/pass" />
+
+    <EditText
+        android:id="@+id/emailLog"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="308dp"
+        android:autofillHints=""
+        android:ems="0"
+        android:hint="email adress"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textColorHint="@color/com_facebook_button_background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:drawableLeft="@drawable/email"
+        tools:drawableStart="@drawable/email" />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/com_facebook_button_send_background"
+        android:elevation="10dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.erez8.chatpic.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.erez8.chatpic.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/to_Chat"
+            app:destination="@id/chatFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.erez8.chatpic.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" >
+        <action
+            android:id="@+id/toChatFragment"
+            app:destination="@+id/chatFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment2"
+        android:name="com.erez8.chatpic.LatestMessagesFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/toNewMessageFrag"
+            app:destination="@id/newMessageFrag" />
+        <action
+            android:id="@+id/backtoHome"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newMessageFrag"
+        android:name="com.erez8.chatpic.NewMessageFrag"
+        android:label="fragment_new_message"
+        tools:layout="@layout/fragment_new_message" >
+        <action
+            android:id="@+id/fromNewMSGtoChatLog"
+            app:destination="@id/chatLog" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatLog"
+        android:name="com.erez8.chatpic.ChatLog"
+        android:label="fragment_chat_log"
+        tools:layout="@layout/fragment_chat_log" >
+        <argument
+            android:name="userId"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+</navigation>

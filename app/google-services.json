@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "176971453916",
+    "firebase_url": "https://chatpic-87400.firebaseio.com",
+    "project_id": "chatpic-87400",
+    "storage_bucket": "chatpic-87400.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176971453916:android:045dfa6c115fcc12",
+        "android_client_info": {
+          "package_name": "com.erez8.chatpic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176971453916-kl9osh5df84sb7vm5jnkene6lbqfvfr6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.erez8.chatpic",
+            "certificate_hash": "c36bfff640dff816de5eb3f127982cc9a82b2353"
+          }
+        },
+        {
+          "client_id": "176971453916-o97g0nrsk40qdtj7ahp13976n15f2up5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDYJll6SXz5qhzkAcXLlAioQ3HPJKvQy4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176971453916-o97g0nrsk40qdtj7ahp13976n15f2up5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
